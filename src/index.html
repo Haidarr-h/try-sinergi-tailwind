@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,30 +7,62 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
 
-  <body class="font-instru">
-    <!-- !NAVBAR -->
-    <header class="h-[768px] bg-[url('./images/stars.png'),_url('./images/background-header.png')]">
-      <div class="max-w-[1200px] mx-auto flex flex-col">
-        <nav class="flex justify-between mt-[15px]">
+  <body class="font-instru p-0 m-0 w-full overflow-x-hidden">
+    <!-- ! background header (blue) -->
+    <header
+      class="h-[541px] lg:h-[748px] w-full max-w-screen bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover"
+    >
+      <!-- ! Container kontennya -->
+      <div class="w-full lg:max-w-[1200px] mx-auto flex flex-col">
+        <!-- ! navbar -->
+        <nav
+          class="flex justify-between mt-[20px] mx-[16px] xl:mt-[15px] xl:mx-0"
+        >
+          <!-- ! logo & text -->
           <div class="flex items-center gap-[20px]">
-            <img src="images/image 1.png" alt="logo" class="w-[50px]" />
+            <img
+              src="images/image 1.png"
+              alt="logo"
+              class="w-[30px] md:w-[50px]"
+            />
             <span class="font-bold text-white">Sinergi Life</span>
           </div>
 
-          <ul class="flex gap-[30px] items-center text-white" id="navbar-links">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">Work</a></li>
-            <li><a href="#" class="hover:underline">About</a></li>
-            <li><a href="#" class="hover:underline">Career</a></li>
-            <li><a href="#" class="hover:underline">Contact</a></li>
-          </ul>
+          <!-- ! OPTIONS di navbar -->
+          <div
+            class="nav-links duration-500 md:static absolute bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          >
+            <ul
+              class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-white"
+              id="navbar-links"
+            >
+              <li><a href="#" class="hover:underline">Home</a></li>
+              <li><a href="#" class="hover:underline">Work</a></li>
+              <li><a href="#" class="hover:underline">About</a></li>
+              <li><a href="#" class="hover:underline">Career</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-6">
+            <img
+              src="images/Menu-Icon.png"
+              alt="menu icon"
+              onclick="onToggleMenu(this)" name="menu"
+              class="w-[20px] text-3xl cursor-pointer md:hidden"
+            />
+          </div>
         </nav>
 
-        <div class="mx-auto text-center mt-[203px] max-w-[1033px]">
-          <h1 class="text-white text-[50px]">
+        <!-- ! tulisan di header --> 
+        <div
+          class="flex flex-col mx-auto px-[16px] lg:mx-auto text-center mt-[100px] lg:mt-[203px] max-w-[380px] sm:max-w-[1033px] items-center"
+        >
+          <h1 class="text-white text-[32px] sm:text-[50px]">
             Advance Your Career with High-Quality Education!
           </h1>
-          <p class="text-white text-[18px] max-w-[795px] mx-auto mt-[30px]">
+          <p
+            class="text-white text-[14px] sm:text-[18px] sm:max-w-[795px] mt-[30px]"
+          >
             Learn from industry experts with a curriculum designed to build your
             skills. Gain mentorship, hands-on experience, and job opportunities
             after graduation!
@@ -39,17 +71,27 @@
       </div>
     </header>
 
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
+
     <main>
-      <!-- ! supported companies -->
-      <div class="supported-companies">
-        <div class="content-1">
-          <h1>Trusted by 100+ Leading Companies & Institutions</h1>
-          <img src="images/Logos Container.png" alt="" />
+      <!-- ! section 1 - supported companies -->
+      <div class="h-[320px] lg:h-[460px] bg-white">
+        <div class="w-full lg:max-w-[1200px] mx-auto flex flex-col pt-[50px] text-center gap-[30px] px-[16px]">
+          <h1 class="text-[24px] font-semibold">Trusted by 100+ Leading Companies & Institutions</h1>
+          <img src="images/companies-shorter.png" alt="companylogo" class="block h-[126px] lg:hidden mx-auto" />
+          <img src="images/Logos Container.png" alt="companylogo" class="hidden h-[180px] lg:block mx-auto"/>
+          
         </div>
       </div>
 
       <!-- ! about us -->
-      <div class="about-us">
+      <div class="">
         <div class="content-2">
           <div class="text-2">
             <h1>About Us</h1>
