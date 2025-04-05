@@ -47,13 +47,14 @@
             <img
               src="images/Menu-Icon.png"
               alt="menu icon"
-              onclick="onToggleMenu(this)" name="menu"
+              onclick="onToggleMenu(this)"
+              name="menu"
               class="w-[20px] text-3xl cursor-pointer md:hidden"
             />
           </div>
         </nav>
 
-        <!-- ! tulisan di header --> 
+        <!-- ! tulisan di header -->
         <div
           class="flex flex-col mx-auto px-[16px] lg:mx-auto text-center mt-[100px] lg:mt-[203px] max-w-[380px] sm:max-w-[1033px] items-center"
         >
@@ -82,20 +83,38 @@
     <main>
       <!-- ! section 1 - supported companies -->
       <div class="h-[320px] lg:h-[460px] bg-white">
-        <div class="w-full lg:max-w-[1200px] mx-auto flex flex-col pt-[50px] text-center gap-[30px] px-[16px]">
-          <h1 class="text-[24px] font-semibold">Trusted by 100+ Leading Companies & Institutions</h1>
-          <img src="images/companies-shorter.png" alt="companylogo" class="block h-[126px] lg:hidden mx-auto" />
-          <img src="images/Logos Container.png" alt="companylogo" class="hidden h-[180px] lg:block mx-auto"/>
-          
+        <!-- ! container kontent section 1 -->
+        <div
+          class="w-full lg:max-w-[1200px] mx-auto flex flex-col pt-[50px] text-center gap-[30px] px-[16px]"
+        >
+          <h1 class="text-[24px] lg:text-[40px] font-semibold">
+            Trusted by 100+ Leading Companies & Institutions
+          </h1>
+          <img
+            src="images/companies-shorter.png"
+            alt="companylogo"
+            class="block h-[126px] lg:hidden mx-auto"
+          />
+          <img
+            src="images/Logos Container.png"
+            alt="companylogo"
+            class="hidden h-[180px] lg:block mx-auto"
+          />
         </div>
       </div>
 
-      <!-- ! about us -->
-      <div class="">
-        <div class="content-2">
-          <div class="text-2">
-            <h1>About Us</h1>
-            <p>
+      <!-- ! section 2: about us -->
+      <div class="bg-[#F5F3FF]">
+        <!-- ! container kontennya -->
+        <div
+          class="flex flex-col lg:flex-row gap-[30px] lg:gap-[21px] w-full lg:max-w-[1200px] px-[16px] xl:px-0 lg:mx-auto lg:max-h-[630px] justify-between"
+        >
+          <!-- ! konten tulisannya -->
+          <div
+            class="flex flex-col gap-[30px] lg:gap-[50px] mt-[30px] lg:mt-[100px] mx-[16px] lg:mx-0 lg:mb-[100px] flex-1"
+          >
+            <h1 class="text-[32px] lg:text-[40px] font-bold">About Us</h1>
+            <p class="text-[16px] lg:text-[20px]">
               Sinergi Insan Andalan serves as a bridge between non-formal
               education and industry needs. We understand that one of the
               biggest challenges for graduates and job seekers is not just
@@ -111,55 +130,80 @@
             </p>
           </div>
 
-          <img src="images/image 196.png" alt="" />
+          <!-- ! container gambar -->
+          <div class="flex-1 flex items-end">
+            <img
+              src="images/image 196.png"
+              alt=""
+              class="w-full max-h-[534px] object-contain"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="key-features">
-        <div class="content-3">
-          <h1>Key Features</h1>
-          <div class="features-content">
-            <ul>
-              <li class="feature-1">
+      <!-- ! section 3: key features -->
+      <div
+        class="bg-white max-h-[1074px] lg:max-h-[535px] pt-[50px] lg:pt-[100px] pb-[25px] lg:pb-[50px] px-[16px] lg:px-0"
+      >
+        <!-- ! container content -->
+        <div
+          class="flex flex-col gap-[30px] lg:gap-[50px] lg:max-w-[1200px] lg:mx-auto"
+        >
+          <h1 class="text-[32px] lg:text-[40px] font-bold">Key Features</h1>
+          <div class="">
+            <ul class="flex flex-col lg:flex-row gap-[16px] lg:gap-[21px]">
+              <li class="keyfeaturesmob lg:keyfeatures">
                 <img
                   src="images/key-features/100+ Experienced Mentor.png"
                   alt="100+ Experienced Mentor"
+                  class="h-[60px]"
                 />
-                <h3>100+ Experienced Mentor</h3>
-                <p>
+                <h3 class="text-[20px] font-bold mt-[20px]">
+                  100+ Experienced Mentor
+                </h3>
+                <p class="text-[16px] mt-[10px]">
                   Learn directly from industry professionals through live Q&A
                   sessions, project reviews, and private mentoring.
                 </p>
               </li>
-              <li class="feature-2">
+              <li class="keyfeaturesmob2 lg:keyfeatures">
                 <img
                   src="images/key-features/Group 7812.png"
                   alt="Flexible Learning"
+                  class="h-[60px]"
                 />
-                <h3>Flexible Learning – Anytime, Anywhere</h3>
-                <p>
+                <h3 class="text-[20px] font-bold mt-[20px]">
+                  Flexible Learning – Anytime, Anywhere
+                </h3>
+                <p class="text-[16px] mt-[10px]">
                   Live & On-Demand Classes – Learn at your own pace or join
                   scheduled live sessions with top mentors.
                 </p>
               </li>
-              <li class="feature-3">
+              <li class="keyfeaturesmob lg:keyfeatures">
                 <img
                   src="images/key-features/Real-World Project-Based Learning.png"
                   alt="Real-World Project-Based Learning"
+                  class="h-[60px]"
                 />
-                <h3>Real-World Project-Based Learning</h3>
-                <p>
+                <h3 class="text-[20px] font-bold mt-[20px]">
+                  Real-World Project-Based Learning
+                </h3>
+                <p class="text-[16px] mt-[10px]">
                   Work on industry-relevant projects and build a strong
                   portfolio to showcase your skills to employers.
                 </p>
               </li>
-              <li class="feature-4">
+              <li class="keyfeaturesmob lg:keyfeatures">
                 <img
                   src="images/key-features/money.png"
                   alt="100% Money-Back Guarantee"
+                  class="h-[60px]"
                 />
-                <h3>100% Money-Back Guarantee</h3>
-                <p>
+                <h3 class="text-[20px] font-bold mt-[20px]">
+                  100% Money-Back Guarantee
+                </h3>
+                <p class="text-[16px] mt-[10px]">
                   We are fully confident in the quality of our education. If
                   you’re not satisfied, we guarantee a 100% refund.
                 </p>
@@ -169,40 +213,69 @@
         </div>
       </div>
 
-      <div class="english-vit">
-        <div class="content-4">
+      <!-- ! section 4: English Vit -->
+      <div
+        class="bg-white max-h-[1037px] xl:max-h-[730px] py-[25px] xl:py-[50px] px-[16px] xl:px-0"
+      >
+        <!-- ! container kontennya -->
+        <div
+          class=" lg:max-w-[1200px] flex flex-col lg:flex-row gap-[30px] lg:gap-[50px] xl:mx-auto"
+        >
+          <!-- ? image orang -->
           <img
             src="images/english-fit/Sinergi Landing Page Illustration-01.png"
             alt="english fit"
+            class="max-h-[490px] xl:max-h-[630px] object-contain"
           />
-
-          <div class="english-vit-content">
-            <img src="images/english-fit/Group 7809.png" alt="english-vit" />
-            <h1>One Stop Platform to Learn English Directly to Practice</h1>
-            <p>
+          <!-- ? kontennya -->
+          <div class=" flex flex-col gap-[20px] lg:gap-[30px] xl:py-[73.5px]">
+            <!-- ! logo -->
+            <img
+              src="images/english-fit/Group 7809.png"
+              alt="english-vit"
+              class="max-h-[30px] xl:max-h-[50px] max-w-[128px] xl:max-w-[214px]"
+            />
+            <!-- ! judul -->
+            <h1 class="text-[32px] xl:text-[40px] font-bold leading-[40px] tracking-[-2.2%]">
+              One Stop Platform to Learn English Directly to Practice
+            </h1>
+            <p class="text-[16px] lg:text-[20px] font-normal leading-[22px] tracking-[-0.011em]">
               Learn English with an interactive method that can be directly
               applied in daily practice, so it can be understood and mastered
               more quickly.
             </p>
-            <div class="english-vit-poin">
-              <ul>
-                <li>
-                  <img src="images/english-fit/Group 3126267.png" alt="" />
-                  <p>
+            <!-- ! bullet points -->
+            <div class="">
+              <ul class="flex flex-col gap-[10px]">
+                <li class="flex flex-row gap-[10px]">
+                  <img
+                    src="images/english-fit/Group 3126267.png"
+                    alt=""
+                    class="h-[24px] object-contain"
+                  />
+                  <p class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]">
                     Practical Methods – Focus on direct use in everyday
                     conversation.
                   </p>
                 </li>
-                <li>
-                  <img src="images/english-fit/Group 3126267.png" alt="" />
-                  <p>
+                <li class="flex flex-row gap-[10px]">
+                  <img
+                    src="images/english-fit/Group 3126267.png"
+                    alt=""
+                    class="h-[24px] object-contain"
+                  />
+                  <p class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]">
                     Interactive Environment – ​​Learn with tutors and active
                     participants.
                   </p>
                 </li>
-                <li>
-                  <img src="images/english-fit/Group 3126267.png" alt="" />
-                  <p>
+                <li class="flex flex-row gap-[10px]">
+                  <img
+                    src="images/english-fit/Group 3126267.png"
+                    alt=""
+                    class="h-[24px] object-contain"
+                  />
+                  <p class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]">
                     Relevant Material – adapted to the needs of the world of
                     work and social life.
                   </p>
@@ -210,15 +283,26 @@
               </ul>
             </div>
 
-            <a href="#">learn more</a>
+            <a href="#" class="text-[14px] font-normal leading-[19px] tracking-[-0.2%]">learn more</a>
           </div>
         </div>
       </div>
 
-      <div class="upgrade">
-        <div class="content-5">
+      <!-- ! section 5: Upgrade skill mudah -->
+      <div
+        class="bg-green-500 max-h-[993px] xl:max-h-[729px] px-[16px] xl:px-0 py-[25px] xl:py-[50px]"
+      >
+        <!-- ! container kontennya (ada dua sisi kanan kiri)-->
+        <div
+          class="lg:max-w-[1200px] flex flex-col lg:flex-row gap-[30px] lg:gap-[50px] xl:mx-auto"
+        >
+          <!-- ! sisi kiri -->
           <div class="upgrade-content-5">
-            <img src="images/upgradee/LOGO APROVED 2 (1)-02 1.png" alt="logo" />
+            <img
+              src="images/upgradee/LOGO APROVED 2 (1)-02 1.png"
+              alt="logo"
+              class="max-h-[59.91px] object-contain"
+            />
 
             <h1>Upgrade Skill Mudah, Dapat Kerja Cepat!</h1>
             <div class="add-content-5">
@@ -253,9 +337,11 @@
             <a href="#">Learn More</a>
           </div>
 
+          <!-- ! sisi kanan -->
           <img
             src="images/upgradee/Sinergi Landing Page Illustration-02.png"
             alt="illustrasi landing page"
+            class="max-h-[629px] object-contain"
           />
         </div>
       </div>

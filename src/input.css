@@ -13,3 +13,40 @@
 h1 {
     @apply font-bold;
 }
+
+p {
+  opacity: 0.8;
+}
+
+
+@layer components {
+  .keyfeatures {
+    width: 285px;
+    height: 285px;
+    background-color: #f5f3ff;
+    padding: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px auto;
+  }
+
+  .keyfeaturesmob {
+    width: 380px;
+    height: 214px;
+    background-color: #f5f3ff;
+    padding: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px auto;
+  }
+
+  .keyfeaturesmob2 {
+    width: 380px;
+    height: 239px;
+    background-color: #f5f3ff;
+    padding: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px auto;
+  }
+}
