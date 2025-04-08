@@ -75,8 +75,9 @@ p {
     margin: 0px auto;
   }
 
+  /* ! konten upgrade 2 */
   .upgrade2li {
-    @apply bg-white flex flex-col gap-[20px] ;
+    @apply bg-white flex flex-col gap-[20px] min-w-[285px] max-w-[360px];
   }
 
   .upgrade2img {

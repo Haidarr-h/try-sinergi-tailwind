@@ -659,8 +659,12 @@ video {
   margin: 0px auto;
 }
 
+/* ! konten upgrade 2 */
+
 .upgrade2li{
   display: flex;
+  min-width: 285px;
+  max-width: 360px;
   flex-direction: column;
   gap: 20px;
   --tw-bg-opacity: 1;
@@ -981,6 +985,10 @@ video {
 
 .gap-\[30px\]{
   gap: 30px;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .overflow-x-hidden{
