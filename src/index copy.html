@@ -10,13 +10,13 @@
   <body class="font-instru p-0 m-0 w-full overflow-x-hidden">
     <!-- ! background header (blue) -->
     <header
-      class="h-[541px] lg:h-[748px] w-full max-w-screen bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover"
+      class="lg:max-h-[748px] w-full max-w-screen bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover"
     >
-      <!-- ! Container kontennya -->
-      <div class="w-full lg:max-w-[1200px] mx-auto flex flex-col">
+      <!-- ! Container kontennya (navbar & header title) -->
+      <div class="w-full lg:max-w-[1200px] pt-[20px] lg:pt-[20px] mx-auto flex flex-col">
         <!-- ! navbar -->
         <nav
-          class="flex justify-between mt-[20px] mx-[16px] xl:mt-[15px] xl:mx-0"
+          class="flex justify-between mx-[16px] xl:mx-0"
         >
           <!-- ! logo & text -->
           <div class="flex items-center gap-[20px]">
@@ -43,13 +43,13 @@
               <li><a href="#" class="hover:underline">Contact</a></li>
             </ul>
           </div>
-          <div class="flex items-center gap-6">
+          <div class="flex items-center gap-6  md:hidden">
             <img
               src="images/Menu-Icon.png"
               alt="menu icon"
               onclick="onToggleMenu(this)"
               name="menu"
-              class="w-[20px] text-3xl cursor-pointer md:hidden"
+              class="w-[20px] text-3xl cursor-pointer"
             />
           </div>
         </nav>
@@ -76,7 +76,7 @@
       const navLinks = document.querySelector(".nav-links");
       function onToggleMenu(e) {
         e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[9%]");
+        navLinks.classList.toggle("top-[5%]");
       }
     </script>
 
@@ -219,7 +219,7 @@
       >
         <!-- ! container kontennya -->
         <div
-          class=" lg:max-w-[1200px] flex flex-col lg:flex-row gap-[30px] lg:gap-[50px] xl:mx-auto"
+          class="lg:max-w-[1200px] flex flex-col lg:flex-row gap-[30px] lg:gap-[50px] xl:mx-auto"
         >
           <!-- ? image orang -->
           <img
@@ -228,7 +228,7 @@
             class="max-h-[490px] xl:max-h-[630px] object-contain"
           />
           <!-- ? kontennya -->
-          <div class=" flex flex-col gap-[20px] lg:gap-[30px] xl:py-[73.5px]">
+          <div class="flex flex-col gap-[20px] lg:gap-[30px] xl:py-[73.5px]">
             <!-- ! logo -->
             <img
               src="images/english-fit/Group 7809.png"
@@ -236,10 +236,14 @@
               class="max-h-[30px] xl:max-h-[50px] max-w-[128px] xl:max-w-[214px]"
             />
             <!-- ! judul -->
-            <h1 class="text-[32px] xl:text-[40px] font-bold leading-[40px] tracking-[-2.2%]">
+            <h1
+              class="text-[32px] xl:text-[40px] font-bold leading-[40px] tracking-[-2.2%]"
+            >
               One Stop Platform to Learn English Directly to Practice
             </h1>
-            <p class="text-[16px] lg:text-[20px] font-normal leading-[22px] tracking-[-0.011em]">
+            <p
+              class="text-[16px] lg:text-[20px] font-normal leading-[22px] tracking-[-0.011em]"
+            >
               Learn English with an interactive method that can be directly
               applied in daily practice, so it can be understood and mastered
               more quickly.
@@ -253,7 +257,9 @@
                     alt=""
                     class="h-[24px] object-contain"
                   />
-                  <p class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]">
+                  <p
+                    class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]"
+                  >
                     Practical Methods – Focus on direct use in everyday
                     conversation.
                   </p>
@@ -264,7 +270,9 @@
                     alt=""
                     class="h-[24px] object-contain"
                   />
-                  <p class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]">
+                  <p
+                    class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]"
+                  >
                     Interactive Environment – ​​Learn with tutors and active
                     participants.
                   </p>
@@ -275,7 +283,9 @@
                     alt=""
                     class="h-[24px] object-contain"
                   />
-                  <p class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]">
+                  <p
+                    class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]"
+                  >
                     Relevant Material – adapted to the needs of the world of
                     work and social life.
                   </p>
@@ -283,18 +293,22 @@
               </ul>
             </div>
 
-            <a href="#" class="text-[14px] font-normal leading-[19px] tracking-[-0.2%]">learn more</a>
+            <a
+              href="#"
+              class="text-[14px] font-normal leading-[19px] tracking-[-0.2%]"
+              >learn more</a
+            >
           </div>
         </div>
       </div>
 
       <!-- ! section 5: Upgrade skill mudah -->
       <div
-        class="bg-white max-h-[993px] xl:max-h-[729px] px-[4%] xl:px-0 py-[25px] xl:py-[50px]"
+        class="bg-white xl:max-h-[729px] px-[4%] xl:px-0 py-[25px] xl:py-[50px]"
       >
         <!-- ! container kontennya (ada dua sisi kanan (gambar) kiri (penjelasan))-->
         <div
-          class=" lg:max-w-[1200px] flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[50px] mx-auto"
+          class="lg:max-w-[1200px] flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[50px] mx-auto"
         >
           <!-- ! sisi kiri (penjelasan)-->
           <div class="flex flex-col gap-[20px] lg:gap-[30px] lg:py-[70px]">
@@ -304,7 +318,9 @@
               class="max-h-[59.91px] max-w-[208px]"
             />
 
-            <h1 class="font-bold text-[32px] lg:text-[40px]">Upgrade Skill Mudah, Dapat Kerja Cepat!</h1>
+            <h1 class="font-bold text-[32px] lg:text-[40px]">
+              Upgrade Skill Mudah, Dapat Kerja Cepat!
+            </h1>
             <div class="flex flex-col lg:gap-[16px]">
               <p class="text-[16px] lg:text-[20px]">
                 Learn English with an interactive method that can be directly
@@ -313,20 +329,29 @@
               </p>
               <ul class="flex flex-col gap-[10px]">
                 <li class="flex flex-row gap-[10px]">
-                  <img src="images/english-fit/Group 3126267.png" class="h-[24px] w-[24px] object-contain"/>
+                  <img
+                    src="images/english-fit/Group 3126267.png"
+                    class="h-[24px] w-[24px] object-contain"
+                  />
                   <p class="text-[16px] lg:text-[20px]">
                     Interactive Environment – ​​Learn with tutors and active
                     participants.
                   </p>
                 </li>
                 <li class="flex flex-row gap-[10px]">
-                  <img src="images/english-fit/Group 3126267.png" class="h-[24px] w-[24px] object-contain"/>
+                  <img
+                    src="images/english-fit/Group 3126267.png"
+                    class="h-[24px] w-[24px] object-contain"
+                  />
                   <p class="text-[16px] lg:text-[20px]">
                     Professional Mentoring – Mentored by experienced teachers.
                   </p>
                 </li>
                 <li class="flex flex-row gap-[10px]">
-                  <img src="images/english-fit/Group 3126267.png" class="h-[24px] w-[24px] object-contain"/>
+                  <img
+                    src="images/english-fit/Group 3126267.png"
+                    class="h-[24px] w-[24px] object-contain"
+                  />
                   <p class="text-[16px] lg:text-[20px]">
                     Faster Results – Improve your ability to speak naturally and
                     confidently.
@@ -334,7 +359,11 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="text-[14px] lg:text-[18px] leading-[19px] lg:leading-[23px] tracking-[-0.2%] lg:tracking-[-1%] text-[#6D28D9]">Learn More</a>
+            <a
+              href="#"
+              class="text-[14px] lg:text-[18px] leading-[19px] lg:leading-[23px] tracking-[-0.2%] lg:tracking-[-1%] text-[#6D28D9]"
+              >Learn More</a
+            >
           </div>
 
           <!-- ! sisi kanan -->
@@ -346,238 +375,292 @@
         </div>
       </div>
 
-      <!-- ! section 6: Part 2: Upgrade skill mudah -->
-      <div class="bg-[#F5F3FF] xl:max-h-[941px] px-[4%] xl:px-0 py-[25px] xl:py-[50px]">
-        <!-- ! container kontennya (col 3 bagian judul + box isi gambar) -->
-        <div class="content-6"> 
-          <img src="images/Profile Container.png" alt="profile" />
-
-          <div class="add-content-6">
-            <a href="#">Meet The Team Behind, Sinergi Insan Andalan</a>
-
-            <h1>We Are Learners, Just Like You!</h1>
-
-            <div class="add-add-content-6">
-              <p>
-                We wanted to rethink education and build a platform for how
-                people actually learn. Learn efficiently, but thoroughly!
-              </p>
-
-              <p>
-                With Sinergi Insan Andalan you are not getting a couple of
-                overpriced one-off courses. This is an ever-growing platform
-                that contains various learning resources that relate to the
-                world of digital industry, are easy to access, motivating,
-                relevant and customizable.
-              </p>
-            </div>
-
-            <div class="button-content-6">
-              <a href="#"
-                ><img src="images/Back Arrow Container.png" alt=""
-              /></a>
-              <a href="#"
-                ><img src="images/Forward Arrow Container.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ! UPGRADE 2 CONTENT -->
-      <div class="upgrade-2">
-        <div class="content-7">
-          <div class="add-content-7">
-            <h1>Upgrade Skill Mudah, Dapat Kerja Cepat!</h1>
-            <p>
+      <!-- ! section 6: Part 2 Upgrade skill mudah -->
+      <div
+        class="bg-[#F5F3FF] xl:max-h-[941px] px-[4%] xl:px-0 py-[50px] xl:py-[100px]"
+      >
+        <!-- ! div containernya flex row (teks, container box besar) -->
+        <div
+          class="lg:max-w-[1200px] flex flex-col gap-[30px] xl:gap-[50px] mx-auto"
+        >
+          <!-- !teksnya -->
+          <div class="flex flex-col gap-[30px]">
+            <h1 class="text-[32px] lg:text[40px] text-center">
+              Upgrade Skill Mudah, Dapat Kerja Cepat!
+            </h1>
+            <p class="text-[16px] lg:text[20px] text-center">
               Belajar dari para ahli industri dengan kurikulum yang didesain
               untuk membangun keterampilan Anda. Dapatkan bimbingan, pengalaman
               langsung, dan kesempatan kerja setelah lulus!
             </p>
           </div>
-
-          <div class="add-content-7-2">
-            <ul>
-              <li>
-                <img src="images/image (7).png" alt="" />
-
-                <div class="add-add-content-7-2">
-                  <img src="images/Job Type Container.png" class="full-time" />
-                  <h3>Offline English Teacher</h3>
-                  <p>
+          <!-- ! containernya -->
+          <div>
+            <ul class="flex flex-row bg-green-400 justify-between gap-[20px]">
+              <!-- ! ini perkotak kontennya -->
+              <!-- ? KONTEN 1 -->
+              <li class="upgrade2li">
+                <!-- !gambar -->
+                <img src="images/image (7).png" alt="" class="upgrade2img" />
+                <!-- ! konten tengah -->
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Offline English Teacher</h3>
+                  <p class="upgrade2p">
                     Teaching English Offline for students with various different
                     age groups and learning purposes.
                   </p>
                   <ul>
-                    <li>Work from Office</li>
-                    <li>Less Than 1 Year Experience</li>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">
+                      Less Than 1 Year Experience
+                    </li>
                   </ul>
-
-                  <a href="#"
-                    ><img src="images/Button.png" alt="" class="button"
-                  /></a>
                 </div>
+                <!-- ! button -->
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class="button"
+                /></a>
               </li>
 
-              <li>
-                <img src="images/image (8).png" alt="" />
-                <div class="add-add-content-7-2">
-                  <img src="images/Job Type Container.png" class="full-time" />
-                  <h3>Graphic Designer</h3>
-                  <p>
+              <!-- ? KONTEN 2 -->
+              <li class="upgrade2li">
+                <img src="images/image (8).png" alt="" class="upgrade2img" />
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Graphic Designer</h3>
+                  <p class="upgrade2p">
                     Designs graphics for social media contents and marketing
                     needs such as poster and sales banner.
                   </p>
                   <ul>
-                    <li>Work from Office</li>
-                    <li>1 Year Experience</li>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">1 Year Experience</li>
                   </ul>
-
-                  <a href="#"
-                    ><img src="images/Button.png" alt="" class="button"
-                  /></a>
                 </div>
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class="button"
+                /></a>
               </li>
-
-              <li>
-                <img src="images/image (9).png" alt="" />
-                <div class="add-add-content-7-2">
-                  <img src="images/Job Type Container.png" class="full-time" />
-                  <h3>Admin Sales</h3>
-                  <p>
+              <!-- ? KONTEN 3 -->
+              <li class="upgrade2li">
+                <img src="images/image (9).png" alt="" class="upgrade2img" />
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Admin Sales</h3>
+                  <p class="upgrade2p">
                     Helping companies improve sales efficiency, provide
                     satisfactory customer and elevate sales
                   </p>
                   <ul>
-                    <li>Work from Office</li>
-                    <li>1 Year Working Experience</li>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">1 Year Working Experience</li>
                   </ul>
-
-                  <a href="#"
-                    ><img src="images/Button.png" alt="" class="button"
-                  /></a>
                 </div>
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class="button"
+                /></a>
               </li>
-
-              <li>
-                <img src="images/image (10).png" alt="" />
-                <div class="add-add-content-7-2">
-                  <img src="images/Job Type Container.png" class="full-time" />
-                  <h3>Content Creator</h3>
-                  <p>
+              <!-- ? KONTEN 4 -->
+              <li class="upgrade2li">
+                <img src="images/image (10).png" alt="" class="upgrade2img" />
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Content Creator</h3>
+                  <p class="upgrade2p">
                     Developing effective, engaging, and high-quality educational
                     materials for learners and
                   </p>
                   <ul>
-                    <li>Work from Office</li>
-                    <li>1 Year Working Experience</li>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">1 Year Working Experience</li>
                   </ul>
-
-                  <a href="#"
-                    ><img src="images/Button.png" alt="" class="button"
-                  /></a>
                 </div>
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class="button"
+                /></a>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="ready">
-        <div class="content-8">
-          <div class="main-content-8">
-            <h1>Ready to develop your potential?</h1>
-            <p>
+      <!-- ! section 7: ready to develop your potential ? -->
+      <div
+        class="bg-white xl:max-h-[439px] px-[4%] xl:px-0 py-[50px] xl:pt-[62px] xl:pb-[64px]"
+      >
+        <!-- ! container kontennya (simpel flex 2 konten (kiri dan kanan (gambar))) -->
+        <div
+          class="flex flex-col md:flex-row gap-[30px] lg:gap-[64px] lg:max-w-[1200px] mx-auto"
+        >
+          <!-- ! konten kiri -->
+          <div class="flex flex-col gap-[20px] lg:pt-[36px]">
+            <h1 class="text-[32px] xl:text-[40px] text-center lg:text-left">
+              Ready to develop your potential?
+            </h1>
+            <p class="text-[16px] xl:text-[20px] text-center lg:text-left">
               Synergy is here to help you increase business efficiency and team
               productivity!
             </p>
-            <a href=""><img src="images/Button (1).png" alt="" /></a>
+            <a href=""
+              ><img
+                src="images/Button (1).png"
+                class="max-h-[59px] max-w-[196px] mx-auto lg:mx-0 mt-[10px] lg:mt-[30px]"
+            /></a>
           </div>
-
-          <img src="images/image 9.png" alt="" />
+          <!-- ! konten kanan -->
+          <img
+            src="images/image 9.png"
+            alt=""
+            class="max-h-[268px] lg:max-h-[313px] max-w-[280px] lg:max-w-[444px] mx-auto"
+          />
         </div>
       </div>
 
-      <div class="photos-gallery">
-        <div class="content-9">
-          <div class="desc-content-9">
-            <h1>Photos & Video Gallery</h1>
-            <p>
+      <!-- ! section 8: photo & video gallery -->
+      <div
+        class="bg-[#F5F3FF] xl:max-h-[1149px] px-[4%] xl:px-0 py-[50px] xl:py-[100px]"
+      >
+        <!-- !container konten (2 konten aja (teks dan gambar kotak (col)))-->
+        <div
+          class="flex flex-col gap-[30px] lg:gap-[50px] mx-auto lg:max-w-[1200px]"
+        >
+          <div class="flex flex-col gap-[30px]">
+            <h1 class="text-[32px] lg:text-[40px] text-center">
+              Photos & Video Gallery
+            </h1>
+            <p
+              class="text-[16px] lg:text-[20px] text-center lg:max-w-[794px] lg:mx-auto"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href=""><img src="images/Button (2).png" alt="" /></a>
+            <a href="">
+              <img
+                src="images/Button (2).png"
+                alt=""
+                class="h-[56px] w-[146px] mx-auto"
+              />
+            </a>
           </div>
 
-          <img src="images/Frame 1597882300.png" alt="" />
+          <img
+            src="images/gallery-mob.png"
+            alt=""
+            class="max-h-[516px] max-w-[380px] mx-auto lg:hidden"
+          />
+          <!-- Show on large screens and above -->
+          <img
+            src="images/Frame 1597882300.png"
+            alt=""
+            class="hidden lg:block max-h-[670px] max-w-[1200px] mx-auto"
+          />
         </div>
       </div>
-
-      <footer class="footer">
-        <div class="content-footer">
-          <div class="top-content">
-            <!--  -->
-            <div class="left-side">
-              <!--  -->
-              <div class="first-top">
-                <div class="footer-logo">
-                  <img
-                    src="images/image 1.png"
-                    alt="logo"
-                    class="logo-footer"
-                  />
-                  <span class="company-name-footer">Sinergi Life</span>
+      <!-- ! section 9: footer -->
+      <footer
+        class="bg-[#2E1065] xl:max-h-[1149px] px-[4%] xl:px-0 py-[50px] xl:py-[100px]"
+      >
+        <!-- ! container kontennya. Cukup ribet:
+        ! A. atas
+          ? kiri (flex row -> 3 bagian)
+          ? kanan (flex col -> 3 bagian)
+        ! B. bawah 
+          ? kiri (konten teks)
+          ? kanan (flex row biasa teks 2 bagian)
+        -->
+        <div class="lg:max-w-[1200px] flex-col gap-[20px] mx-auto text-white">
+          <!-- ! A. atas -->
+          <div class="flex flex-col lg:flex-row gap-[20px] lg:gap-[36px]  h-full">
+            <!-- ! Atas kiri  -->
+            <div class="flex flex-col lg:flex-row gap-[20px] lg:gap-[60px]">
+              <!-- ! atas kiri pertama -->
+              <div class="flex flex-col gap-[20px] ">
+                <div class="flex flex-col gap-[20px]">
+                  <!-- ! logo & text -->
+                  <div class="flex items-center gap-[16px]">
+                    <img src="images/image 1.png" alt="logo" class="w-[50px]" />
+                    <span class="text-white text-[18px] font-medium"
+                      >Sinergi Life</span
+                    >
+                  </div>
                 </div>
-                <p>
+                <p class="">
                   Sinergi Life is a holding and investment company that focuses
                   on developing and empowering digital businesses.
                 </p>
               </div>
+              <!-- ! atas kiri kedua dan ketiga -->
+              <div class="flex flex-row mx-auto w-full text-center">
+                <div class="w-1/2 text-center">
+                  <h4 class="text-[18px] font-medium">Company</h4>
+                  <p class="text-[16px] font-normal opacity-80">About</p>
+                  <p class="text-[16px] font-normal opacity-80">Press</p>
+                  <p class="text-[16px] font-normal opacity-80">Careers</p>
+                  <p class="text-[16px] font-normal opacity-80">Contact</p>
+                </div>
 
-              <div class="second-top">
-                <h4>Company</h4>
-                <p>About</p>
-                <p>Press</p>
-                <p>Careers</p>
-                <p>Contact</p>
-              </div>
-
-              <div class="third-top">
-                <h4>Connect</h4>
-                <p>Instagram</p>
-                <p>Linkedin</p>
-                <p>Twitter</p>
-                <p>Facebook</p>
+                <div class="w-1/2 text-center">
+                  <h4 class="text-[18px] font-medium">Connect</h4>
+                  <p class="text-[16px] font-normal opacity-80">Instagram</p>
+                  <p class="text-[16px] font-normal opacity-80">Linkedin</p>
+                  <p class="text-[16px] font-normal opacity-80">Twitter</p>
+                  <p class="text-[16px] font-normal opacity-80">Facebook</p>
+                </div>
               </div>
             </div>
 
-            <div class="right-side">
-              <p>Stay Updated</p>
+            <!-- ! Atas kanan  -->
+            <div class="flex flex-col gap-[20px]">
+              <p class="text-[16px] font-normal">Stay Updated</p>
 
-              <div class="email-box">
-                <input type="text" placeholder="Enter your mail..." />
-                <a href="#"><img src="images/Button (3).png" alt="" /></a>
+              <div class="flex flex-row gap-[10px] mx-auto w-full">
+                <input
+                  type="text"
+                  placeholder="Enter your mail..."
+                  class="w-full h-[60px] px-[16px] py-[12px] text-white text-[14px] rounded-[10px] border-[2px] border-[#6D28D9] bg-white/10 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#6D28D9]"
+                />
+                <a href="#"
+                  ><img
+                    src="images/Button (3).png"
+                    alt=""
+                    class="max-h-[60px] max-w-[101px]"
+                /></a>
               </div>
 
-              <p>
+              <p class="text-[16px] font-normal opacity-80">
                 You’ll receive occasional emails from Eduwork, You always have
                 the choice to unsubscribe within every email
               </p>
             </div>
           </div>
 
-          <div class="bot-content">
-            <div class="left-bot">
-              <h4>©2025 Sinergi Life, All Rights Reserved.</h4>
-              <p>
+          <!-- ! B. bawah -->
+          <div class="flex flex-col lg:flex-row w-full lg:justify-between gap-[14px] lg:gap-[378px] pt-[30px]">
+            <!-- ! bawah kiri -->
+            <div class="flex flex-col gap-[10px] ">
+              <h4 class="text-[18px] font-medium text-center lg:text-left">©2025 Sinergi Life, All Rights Reserved.</h4>
+              <p class="text-[16px] font-normal text-center lg:text-left opacity-80">
                 Sinergi Life is a holding and investment company that focuses on
                 developing and empowering digital businesses.
               </p>
             </div>
-
-            <div class="right-bot">
-              <p>Terms & Condition</p>
-              <p>Privacy Policy</p>
+            <!-- ! bawah kanan -->
+            <div class="w-full flex flex-row lg:items-center">
+              <p class="w-1/2 text-center">Terms & Condition</p>
+              <p class="w-1/2 text-center">Privacy Policy</p>
             </div>
           </div>
         </div>

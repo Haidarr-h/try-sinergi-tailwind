@@ -8,24 +8,26 @@
   </head>
 
   <body class="font-instru p-0 m-0 w-full overflow-x-hidden">
-    <!-- ! background header (blue) kerenn aa -->
+    <!-- ! background header (blue) -->
     <header
-      class="lg:max-h-[748px] w-full max-w-screen bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover"
+      class="w-full bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover"
     >
       <!-- ! Container kontennya (navbar & header title) -->
-      <div class="w-full lg:max-w-[1200px] pt-[20px] lg:pt-[20px] mx-auto flex flex-col">
+      <div
+        class="w-full lg:max-w-[1200px] pt-[20px] lg:pt-[15px] mx-auto flex flex-col px-[4%] xl:px-0"
+      >
         <!-- ! navbar -->
-        <nav
-          class="flex justify-between mx-[16px] xl:mx-0"
-        >
+        <nav class="flex justify-between">
           <!-- ! logo & text -->
-          <div class="flex items-center gap-[20px]">
+          <div class="flex items-center gap-[14px] lg:gap-[20px]">
             <img
               src="images/image 1.png"
               alt="logo"
-              class="w-[30px] md:w-[50px]"
+              class="w-[33px] md:w-[50px]"
             />
-            <span class="font-bold text-white">Sinergi Life</span>
+            <span class="font-bold text-white text-[16px] leading-[100%]"
+              >Sinergi Life</span
+            >
           </div>
 
           <!-- ! OPTIONS di navbar -->
@@ -33,17 +35,41 @@
             class="nav-links duration-500 md:static absolute bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
           >
             <ul
-              class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-white"
+              class="flex md:flex-row flex-col md:items-center md:gap-[30px] text-white"
               id="navbar-links"
             >
-              <li><a href="#" class="hover:underline">Home</a></li>
-              <li><a href="#" class="hover:underline">Work</a></li>
-              <li><a href="#" class="hover:underline">About</a></li>
-              <li><a href="#" class="hover:underline">Career</a></li>
-              <li><a href="#" class="hover:underline">Contact</a></li>
+              <li>
+                <a href="#" class="font-bold group navbar-a"
+                  >Home <span class="group-hover:w-full navbar-span"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="group navbar-a"
+                  >Work
+                  <span class="group-hover:w-full navbar-span"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group navbar-a"
+                  >About
+                  <span class="group-hover:w-full navbar-span"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group navbar-a"
+                  >Career
+                  <span class="group-hover:w-full navbar-span"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group navbar-a"
+                  >Contact
+                  <span class="group-hover:w-full navbar-span"></span>
+                </a>
+              </li>
             </ul>
           </div>
-          <div class="flex items-center gap-6  md:hidden">
+          <div class="flex items-center gap-6 md:hidden">
             <img
               src="images/Menu-Icon.png"
               alt="menu icon"
@@ -56,13 +82,13 @@
 
         <!-- ! tulisan di header -->
         <div
-          class="flex flex-col mx-auto px-[16px] lg:mx-auto text-center mt-[100px] lg:mt-[203px] max-w-[380px] sm:max-w-[1033px] items-center"
+          class="flex flex-col mx-auto text-center py-[100px] lg:pt-[203px] lg:py-[283px] sm:max-w-[1033px] items-center"
         >
-          <h1 class="text-white text-[32px] sm:text-[50px]">
+          <h1 class="text-white text-[32px] lg:text-[50px]">
             Advance Your Career with High-Quality Education!
           </h1>
           <p
-            class="text-white text-[14px] sm:text-[18px] sm:max-w-[795px] mt-[30px]"
+            class="text-white text-[14px] lg:text-[18px] leading-[19px] tracking-[-0.2%] lg:max-w-[795px] mt-[30px]"
           >
             Learn from industry experts with a curriculum designed to build your
             skills. Gain mentorship, hands-on experience, and job opportunities
@@ -82,10 +108,10 @@
 
     <main>
       <!-- ! section 1 - supported companies -->
-      <div class="h-[320px] lg:h-[460px] bg-white">
+      <div class="bg-white py-[50px] xl:py-[100px] px-[4%] xl:px-0">
         <!-- ! container kontent section 1 -->
         <div
-          class="w-full lg:max-w-[1200px] mx-auto flex flex-col pt-[50px] text-center gap-[30px] px-[16px]"
+          class="w-full lg:max-w-[1200px] mx-auto flex flex-col text-center gap-[30px] lg:gap-[50px]"
         >
           <h1 class="text-[24px] lg:text-[40px] font-semibold">
             Trusted by 100+ Leading Companies & Institutions
@@ -104,15 +130,13 @@
       </div>
 
       <!-- ! section 2: about us -->
-      <div class="bg-[#F5F3FF]">
+      <div class="bg-[#F5F3FF] pt-[50px] xl:pt-[100px] px-[4%] xl:px-0">
         <!-- ! container kontennya -->
         <div
-          class="flex flex-col lg:flex-row gap-[30px] lg:gap-[21px] w-full lg:max-w-[1200px] px-[16px] xl:px-0 lg:mx-auto lg:max-h-[630px] justify-between"
+          class="flex flex-col lg:flex-row gap-[30px] lg:gap-[21px] w-full lg:max-w-[1200px] lg:mx-auto justify-between"
         >
           <!-- ! konten tulisannya -->
-          <div
-            class="flex flex-col gap-[30px] lg:gap-[50px] mt-[30px] lg:mt-[100px] mx-[16px] lg:mx-0 lg:mb-[100px] flex-1"
-          >
+          <div class="flex-1 flex flex-col gap-[30px] lg:gap-[50px] lg:pb-[100px]">
             <h1 class="text-[32px] lg:text-[40px] font-bold">About Us</h1>
             <p class="text-[16px] lg:text-[20px]">
               Sinergi Insan Andalan serves as a bridge between non-formal
@@ -131,25 +155,28 @@
           </div>
 
           <!-- ! container gambar -->
-          <div class="flex-1 flex items-end">
-            <img
-              src="images/image 196.png"
-              alt=""
-              class="w-full max-h-[534px] object-contain"
-            />
+          <!-- ! container gambar -->
+          <div class="flex-1 flex">
+            <div class="mt-auto w-full">
+              <img
+                src="images/image 196.png"
+                alt=""
+                class="w-full max-h-[534px] object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <!-- ! section 3: key features -->
       <div
-        class="bg-white max-h-[1074px] lg:max-h-[535px] pt-[50px] lg:pt-[100px] pb-[25px] lg:pb-[50px] px-[16px] lg:px-0"
+        class="bg-white pt-[50px] lg:pt-[100px] pb-[25px] lg:pb-[50px] px-[4%] xl:px-0"
       >
         <!-- ! container content -->
         <div
           class="flex flex-col gap-[30px] lg:gap-[50px] lg:max-w-[1200px] lg:mx-auto"
         >
-          <h1 class="text-[32px] lg:text-[40px] font-bold">Key Features</h1>
+          <h1 class="text-[32px] lg:text-[40px] font-bold sm:text-center xl:text-left">Key Features</h1>
           <div class="">
             <ul class="flex flex-col lg:flex-row gap-[16px] lg:gap-[21px]">
               <li class="keyfeaturesmob lg:keyfeatures">
@@ -166,7 +193,7 @@
                   sessions, project reviews, and private mentoring.
                 </p>
               </li>
-              <li class="keyfeaturesmob2 lg:keyfeatures">
+              <li class="keyfeaturesmob lg:keyfeatures">
                 <img
                   src="images/key-features/Group 7812.png"
                   alt="Flexible Learning"
@@ -215,7 +242,7 @@
 
       <!-- ! section 4: English Vit -->
       <div
-        class="bg-white max-h-[1037px] xl:max-h-[730px] py-[25px] xl:py-[50px] px-[16px] xl:px-0"
+        class="bg-white py-[25px] xl:py-[50px] px-[4%] xl:px-0"
       >
         <!-- ! container kontennya -->
         <div
@@ -396,7 +423,7 @@
           </div>
           <!-- ! containernya -->
           <div>
-            <ul class="flex flex-row bg-green-400 justify-between gap-[20px]">
+            <ul class="flex flex-row justify-between gap-[20px]">
               <!-- ! ini perkotak kontennya -->
               <!-- ? KONTEN 1 -->
               <li class="upgrade2li">
@@ -422,7 +449,7 @@
                 </div>
                 <!-- ! button -->
                 <a href="#" class="upgrade-img"
-                  ><img src="images/Button.png" alt="" class="button"
+                  ><img src="images/Button.png" alt="" class=""
                 /></a>
               </li>
 
@@ -583,11 +610,13 @@
         -->
         <div class="lg:max-w-[1200px] flex-col gap-[20px] mx-auto text-white">
           <!-- ! A. atas -->
-          <div class="flex flex-col lg:flex-row gap-[20px] lg:gap-[36px]  h-full">
+          <div
+            class="flex flex-col lg:flex-row gap-[20px] lg:gap-[36px] h-full"
+          >
             <!-- ! Atas kiri  -->
             <div class="flex flex-col lg:flex-row gap-[20px] lg:gap-[60px]">
               <!-- ! atas kiri pertama -->
-              <div class="flex flex-col gap-[20px] ">
+              <div class="flex flex-col gap-[20px]">
                 <div class="flex flex-col gap-[20px]">
                   <!-- ! logo & text -->
                   <div class="flex items-center gap-[16px]">
@@ -648,11 +677,17 @@
           </div>
 
           <!-- ! B. bawah -->
-          <div class="flex flex-col lg:flex-row w-full lg:justify-between gap-[14px] lg:gap-[378px] pt-[30px]">
+          <div
+            class="flex flex-col lg:flex-row w-full lg:justify-between gap-[14px] lg:gap-[378px] pt-[30px]"
+          >
             <!-- ! bawah kiri -->
-            <div class="flex flex-col gap-[10px] ">
-              <h4 class="text-[18px] font-medium text-center lg:text-left">©2025 Sinergi Life, All Rights Reserved.</h4>
-              <p class="text-[16px] font-normal text-center lg:text-left opacity-80">
+            <div class="flex flex-col gap-[10px]">
+              <h4 class="text-[18px] font-medium text-center lg:text-left">
+                ©2025 Sinergi Life, All Rights Reserved.
+              </h4>
+              <p
+                class="text-[16px] font-normal text-center lg:text-left opacity-80"
+              >
                 Sinergi Life is a holding and investment company that focuses on
                 developing and empowering digital businesses.
               </p>

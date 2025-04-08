@@ -36,9 +36,17 @@ p {
 
 
 @layer components {
+  .navbar-a {
+    @apply  relative transition duration-300;
+  }
+
+  .navbar-span {
+    @apply absolute left-0 -bottom-1 h-[2px] w-0 bg-[#FFBC38] transition-all duration-300 ;
+  }
+  
   .keyfeatures {
-    width: 285px;
-    height: 285px;
+    /* width: 285px;
+    height: 285px; */
     background-color: #f5f3ff;
     padding: 20px;
     text-decoration: none;
@@ -47,8 +55,9 @@ p {
   }
 
   .keyfeaturesmob {
-    width: 380px;
-    height: 214px;
+    /* width: 380px;
+    height: 214px; */
+    @apply max-w-[380px];
     background-color: #f5f3ff;
     padding: 16px;
     text-decoration: none;
@@ -57,8 +66,8 @@ p {
   }
 
   .keyfeaturesmob2 {
-    width: 380px;
-    height: 239px;
+    /* width: 380px;
+    height: 239px; */
     background-color: #f5f3ff;
     padding: 16px;
     text-decoration: none;
@@ -67,7 +76,7 @@ p {
   }
 
   .upgrade2li {
-    @apply bg-blue-300 flex flex-col gap-[20px] ;
+    @apply bg-white flex flex-col gap-[20px] ;
   }
 
   .upgrade2img {
@@ -95,7 +104,7 @@ p {
   }
 
   .upgrade-img {
-    @apply h-[59px] w-[245px] mx-auto mt-auto mb-[20px] ;
+    @apply max-h-[59px] max-w-[245px] mt-auto mb-[20px] px-[20px] mx-auto;
   }
 
   
