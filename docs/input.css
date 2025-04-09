@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ! MOBILE DESIGN */
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ p {
   letter-spacing: -1.1%;
 }
 
+/* ! LG design */
 @media (min-width: 1024px) {
   h1 {
     @apply text-[40px] leading-[50px] tracking-[0];
