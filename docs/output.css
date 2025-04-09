@@ -1362,6 +1362,10 @@ p {
     max-height: 313px;
   }
 
+  .lg\:max-h-\[1080px\]{
+    max-height: 1080px;
+  }
+
   .lg\:max-w-\[1200px\]{
     max-width: 1200px;
   }
