@@ -8,15 +8,25 @@
   </head>
 
   <body class="font-instru p-0 m-0 w-full overflow-x-hidden">
-    <!-- ! background header (blue) -->
-    <header
-      class="w-full bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover"
-    >
-      <!-- ! Container kontennya (navbar & header title) -->
-      <div
-        class="w-full lg:max-w-[1200px] pt-[20px] lg:pt-[15px] mx-auto flex flex-col px-[4%] xl:px-0"
+    <!-- ! background header (background video upscale) -->
+    <header class="relative w-full bg-cover">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <!-- ! navbar -->
+        <source
+          src="https://upscale.id/template/upscale/media/repeat-medium.mp4?v=1"
+          type="video/mp4"
+        />
+      </video>
+      <!-- ! Container kontennya (navbar & header teks) -->
+      <div
+        class="relative w-full lg:max-w-[1200px] pt-[20px] lg:pt-[15px] mx-auto flex flex-col px-[4%] xl:px-0"
+      >
+        <!-- ! navbar (logo, menu, languages)-->
         <nav class="flex justify-between">
           <!-- ! logo & text -->
           <div class="flex items-center gap-[14px] lg:gap-[20px]">
@@ -32,7 +42,7 @@
 
           <!-- ! OPTIONS di navbar -->
           <div
-            class="nav-links duration-500 md:static absolute bg-[url('./images/stars.png'),_url('./images/background-header.png')] bg-cover md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+            class="nav-links duration-500 md:static absolute bg-[url('./images/stars.png'),_url('./images/background-header.png')] md:bg-none bg-cover md:min-h-fit min-h-[20vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 mt-10 md:mt-0"
           >
             <ul
               class="flex md:flex-row flex-col md:items-center md:gap-[30px] text-white"
@@ -69,6 +79,14 @@
               </li>
             </ul>
           </div>
+
+          <!-- ! language option di navbar -->
+          <div class="hidden md:flex md:flex-row md:gap-[10px] h-[20px] text-white my-auto">
+            <img src="images/Frame 1597882306.png" alt="language" class="h-[14px]" />
+            <p class="text-[16px] leading-[100%] tracking-[0%]">ID</p>
+            <img src="images/Polygon 1.png" alt="drag down" class="h-[8.11269760131836px]" />
+          </div>
+
           <div class="flex items-center gap-6 md:hidden">
             <img
               src="images/Menu-Icon.png"
@@ -82,18 +100,19 @@
 
         <!-- ! tulisan di header -->
         <div
-          class="flex flex-col mx-auto text-center py-[100px] lg:pt-[203px] lg:py-[283px] sm:max-w-[1033px] items-center"
+          class="flex flex-col mx-auto text-center py-[100px] lg:pt-[319px] lg:pb-[398px] sm:max-w-[1033px] items-center gap-[30px]"
         >
-          <h1 class="text-white text-[32px] lg:text-[50px]">
+          <h1 class="text-white text-[32px] lg:text-[50px] leading-[40px] tracking-[-2.2%] font-bold">
             Advance Your Career with High-Quality Education!
           </h1>
           <p
-            class="text-white text-[14px] lg:text-[18px] leading-[19px] tracking-[-0.2%] lg:max-w-[795px] mt-[30px]"
+            class="text-white text-[14px] lg:text-[18px] leading-[19px] tracking-[-0.2%] lg:max-w-[795px]"
           >
             Learn from industry experts with a curriculum designed to build your
             skills. Gain mentorship, hands-on experience, and job opportunities
             after graduation!
           </p>
+          <a href=""><img src="images/Button (4).png" alt="" class="h-[51px] mx-auto"></a>
         </div>
       </div>
     </header>
@@ -136,7 +155,9 @@
           class="flex flex-col lg:flex-row gap-[30px] lg:gap-[21px] w-full lg:max-w-[1200px] lg:mx-auto justify-between"
         >
           <!-- ! konten tulisannya -->
-          <div class="flex-1 flex flex-col gap-[30px] lg:gap-[50px] lg:pb-[100px]">
+          <div
+            class="flex-1 flex flex-col gap-[30px] lg:gap-[50px] lg:pb-[100px]"
+          >
             <h1 class="text-[32px] lg:text-[40px] font-bold">About Us</h1>
             <p class="text-[16px] lg:text-[20px]">
               Sinergi Insan Andalan serves as a bridge between non-formal
@@ -176,7 +197,11 @@
         <div
           class="flex flex-col gap-[30px] lg:gap-[50px] lg:max-w-[1200px] lg:mx-auto"
         >
-          <h1 class="text-[32px] lg:text-[40px] font-bold sm:text-center xl:text-left">Key Features</h1>
+          <h1
+            class="text-[32px] lg:text-[40px] font-bold sm:text-center xl:text-left"
+          >
+            Key Features
+          </h1>
           <div class="">
             <ul class="flex flex-col lg:flex-row gap-[16px] lg:gap-[21px]">
               <li class="keyfeaturesmob lg:keyfeatures">
@@ -241,9 +266,7 @@
       </div>
 
       <!-- ! section 4: English Vit -->
-      <div
-        class="bg-white py-[25px] xl:py-[50px] px-[4%] xl:px-0"
-      >
+      <div class="bg-white py-[25px] xl:py-[50px] px-[4%] xl:px-0">
         <!-- ! container kontennya -->
         <div
           class="lg:max-w-[1200px] flex flex-col lg:flex-row gap-[30px] lg:gap-[50px] xl:mx-auto"
@@ -403,9 +426,7 @@
       </div>
 
       <!-- ! section 6: Part 2 Upgrade skill mudah -->
-      <div
-        class="bg-[#F5F3FF] px-[4%] xl:px-0 py-[50px] xl:py-[100px]"
-      >
+      <div class="bg-[#F5F3FF] px-[4%] xl:px-0 py-[50px] xl:py-[100px]">
         <!-- ! div containernya flex row (teks, container box besar) -->
         <div
           class="lg:max-w-[1200px] flex flex-col gap-[30px] xl:gap-[50px] mx-auto"
@@ -423,7 +444,9 @@
           </div>
           <!-- ! containernya -->
           <div>
-            <ul class="flex flex-row justify-between gap-[20px] overflow-y-auto">
+            <ul
+              class="flex flex-row justify-between gap-[20px] overflow-y-auto"
+            >
               <!-- ! ini perkotak kontennya -->
               <!-- ? KONTEN 1 -->
               <li class="upgrade2li">

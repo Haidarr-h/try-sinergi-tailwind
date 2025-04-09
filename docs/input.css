@@ -4,40 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ! MOBILE DESIGN */
+/* ! h1, h2, h3, p components */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-    @apply font-bold;
-    line-height: 40px;
-    letter-spacing: -2.2%;
+/* h1 {
+    @apply font-bold text-[32px] md:text-[36px] lg:text-[40px];
+    @apply leading-[40px] lg:leading-[50px];
+    @apply tracking-[-2.2%] lg:tracking-[0%];
 }
 
 p {
+  @apply font-medium text-[16px] md:text-[18px] lg:text-[20px];
+  @apply leading-[22px] lg:leading-[30px];
+  @apply tracking-[-1.1%] lg:tracking-[0%];
   opacity: 0.8;
-  line-height: 22px;
-  letter-spacing: -1.1%;
-}
-
-/* ! LG design */
-@media (min-width: 1024px) {
-  h1 {
-    @apply text-[40px] leading-[50px] tracking-[0];
-  }
-
-  p {
-    opacity: 0.8;
-    line-height: 30px;
-    letter-spacing: 0;
-  }
-}
-
+} */
 
 @layer components {
+  /* ! header */
   .navbar-a {
     @apply  relative transition duration-300;
   }
@@ -45,7 +33,13 @@ p {
   .navbar-span {
     @apply absolute left-0 -bottom-1 h-[2px] w-0 bg-[#FFBC38] transition-all duration-300 ;
   }
+
+  .language-img {
+    @apply hidden md:block h-[14px];
+  }
   
+
+  /* ! key features */
   .keyfeatures {
     /* width: 285px;
     height: 285px; */
