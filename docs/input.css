@@ -71,6 +71,27 @@ p {
     margin: 0px auto;
   }
 
+  /* ! konten langkah luar biasa english vit (graph) */
+  .content-box {
+    @apply flex flex-row gap-[20px] lg:gap-[30px];
+  }
+
+  .content-box-left {
+    @apply flex flex-row lg:flex-row-reverse gap-[20px] lg:gap-[30px] lg:text-right;
+  }
+
+  .content-box-text {
+    @apply w-full flex flex-col gap-[20px];
+  }
+
+  .right-h3 {
+    @apply font-bold text-[20px] leading-[25.5px] tracking-[-1.7%];
+  }
+
+  .right-p {
+    @apply font-normal text-[16px] leading-[22px] tracking-[-1.1%];
+  }
+
   /* ! konten upgrade 2 */
   .upgrade2li {
     @apply bg-white flex flex-col gap-[20px] min-w-[285px] max-w-[360px];
