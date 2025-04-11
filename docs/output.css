@@ -755,6 +755,10 @@ video {
   z-index: 10;
 }
 
+.z-20{
+  z-index: 20;
+}
+
 .m-0{
   margin: 0px;
 }
@@ -779,6 +783,10 @@ video {
 
 .mt-\[20px\]{
   margin-top: 20px;
+}
+
+.mt-\[50px\]{
+  margin-top: 50px;
 }
 
 .mt-auto{
@@ -881,6 +889,14 @@ video {
   max-height: 670px;
 }
 
+.max-h-\[\]{
+  max-height: ;
+}
+
+.max-h-\[220px\]{
+  max-height: 220px;
+}
+
 .min-h-\[20vh\]{
   min-height: 20vh;
 }
@@ -909,12 +925,12 @@ video {
   width: 50px;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-auto{
   width: auto;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[101px\]{
@@ -1041,11 +1057,6 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[url\(\'\.\/images\/stars\.png\'\)\2c _url\(\'\.\/images\/background-header\.png\'\)\]{
   background-image: url('./images/stars.png'), url('./images/background-header.png');
 }
@@ -1101,10 +1112,6 @@ video {
 .py-\[50px\]{
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.pb-\[25px\]{
-  padding-bottom: 25px;
 }
 
 .pt-\[20px\]{
@@ -1188,12 +1195,24 @@ video {
   line-height: 40px;
 }
 
+.leading-\[\]{
+  line-height: ;
+}
+
+.leading-\[25\.5px\]{
+  line-height: 25.5px;
+}
+
 .tracking-\[-0\.011em\]{
   letter-spacing: -0.011em;
 }
 
 .tracking-\[-0\.2\%\]{
   letter-spacing: -0.2%;
+}
+
+.tracking-\[-1\.1\%\]{
+  letter-spacing: -1.1%;
 }
 
 .tracking-\[-2\.2\%\]{
@@ -1204,6 +1223,10 @@ video {
   letter-spacing: 0%;
 }
 
+.tracking-\[-1\.7\%\]{
+  letter-spacing: -1.7%;
+}
+
 .text-\[\#6D28D9\]{
   --tw-text-opacity: 1;
   color: rgb(109 40 217 / var(--tw-text-opacity, 1));
@@ -1212,6 +1235,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .placeholder-white\/70::-moz-placeholder{
@@ -1291,10 +1318,6 @@ p {
   .sm\:bg-transparent{
     background-color: transparent;
   }
-
-  .sm\:text-center{
-    text-align: center;
-  }
 }
 
 @media (min-width: 768px){
@@ -1339,10 +1362,6 @@ p {
     gap: 10px;
   }
 
-  .md\:gap-\[30px\]{
-    gap: 30px;
-  }
-
   .md\:gap-\[33px\]{
     gap: 33px;
   }
@@ -1357,6 +1376,10 @@ p {
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:-mt-\[140px\]{
+    margin-top: -140px;
   }
 
   .lg\:mt-\[30px\]{
@@ -1456,14 +1479,6 @@ p {
     padding-bottom: 398px;
   }
 
-  .lg\:pb-\[50px\]{
-    padding-bottom: 50px;
-  }
-
-  .lg\:pt-\[100px\]{
-    padding-top: 100px;
-  }
-
   .lg\:pt-\[15px\]{
     padding-top: 15px;
   }
@@ -1500,24 +1515,16 @@ p {
     line-height: 23px;
   }
 
-  .lg\:leading-\[58px\]{
-    line-height: 58px;
-  }
-
-  .lg\:leading-\[19px\]{
-    line-height: 19px;
-  }
-
   .lg\:leading-\[28px\]{
     line-height: 28px;
   }
 
-  .lg\:tracking-\[-1\%\]{
-    letter-spacing: -1%;
+  .lg\:leading-\[58px\]{
+    line-height: 58px;
   }
 
-  .lg\:tracking-\[-2\.2\%\]{
-    letter-spacing: -2.2%;
+  .lg\:tracking-\[-1\%\]{
+    letter-spacing: -1%;
   }
 
   .lg\:tracking-\[0\%\]{
@@ -1589,10 +1596,6 @@ p {
 
   .xl\:pt-\[62px\]{
     padding-top: 62px;
-  }
-
-  .xl\:text-left{
-    text-align: left;
   }
 
   .xl\:text-\[20px\]{
