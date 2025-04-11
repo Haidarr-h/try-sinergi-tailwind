@@ -27,7 +27,7 @@ p {
 @layer components {
   /* ! header */
   .navbar-a {
-    @apply  relative transition duration-300;
+    @apply  relative transition duration-300 text-[16px] leading-[100%] font-medium opacity-[80%] py-[4px] px-[3px];
   }
 
   .navbar-span {
