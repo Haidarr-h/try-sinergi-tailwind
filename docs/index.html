@@ -52,7 +52,8 @@
             >
               <li>
                 <a href="#" class="font-bold group navbar-a"
-                  >Home <span class="group-hover:w-full sm:w-full navbar-span"></span
+                  >Home
+                  <span class="group-hover:w-full sm:w-full navbar-span"></span
                 ></a>
               </li>
               <li>
@@ -84,19 +85,31 @@
 
           <!-- ! language option di navbar -->
           <div
-            class="hidden md:flex md:flex-row md:gap-[10px] h-[20px] text-white my-auto"
+            class="relative items-center cursor-pointer group hidden md:flex md:flex-row md:gap-[10px] h-[20px] text-white my-auto"
           >
             <img
               src="images/Frame 1597882306.png"
               alt="language"
-              class="h-[14px] w-auto my-auto"
+              class="h-[14px] w-auto"
             />
-            <p class="text-[16px] leading-[100%] tracking-[0%] my-auto">ID</p>
+            <p class="text-[16px] leading-[100%] tracking-[0%]">ID</p>
             <img
               src="images/Polygon 1.png"
               alt="drag down"
-              class="h-[8.11269760131836px] w-auto my-auto"
+              class="h-[8px] w-auto"
             />
+
+            <!-- Dropdown Menu (hidden by default) -->
+            <div
+              class="absolute top-full left-0 mt-2 w-[100px] bg-white text-black rounded-lg shadow-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-50"
+            >
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
+                Indonesia
+              </a>
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
+                English
+              </a>
+            </div>
           </div>
 
           <div class="flex items-center gap-6 md:hidden">
@@ -154,7 +167,9 @@
               alt="100+ Experienced Mentor"
               class="h-[60px] w-auto"
             />
-            <h3 class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]">
+            <h3
+              class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
+            >
               100+ Experienced Mentor
             </h3>
             <p class="text-[16px] leading-[22px] tracking-[-1.1%] mt-[10px]">
@@ -168,7 +183,9 @@
               alt="Flexible Learning"
               class="h-[60px] w-auto"
             />
-            <h3 class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]">
+            <h3
+              class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
+            >
               Flexible Learning – Anytime, Anywhere
             </h3>
             <p class="text-[16px] leading-[22px] tracking-[-1.1%] mt-[10px]">
@@ -182,7 +199,9 @@
               alt="Real-World Project-Based Learning"
               class="h-[60px] w-auto"
             />
-            <h3 class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]">
+            <h3
+              class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
+            >
               Real-World Project-Based Learning
             </h3>
             <p class="text-[16px] leading-[22px] tracking-[-1.1%] mt-[10px]">
@@ -196,7 +215,9 @@
               alt="100% Money-Back Guarantee"
               class="h-[60px] w-auto"
             />
-            <h3 class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]">
+            <h3
+              class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
+            >
               100% Money-Back Guarantee
             </h3>
             <p class="text-[16px] leading-[22px] tracking-[-1.1%] mt-[10px]">
@@ -280,7 +301,7 @@
           <img
             src="images/english-fit/Sinergi Landing Page Illustration-01.png"
             alt="english fit"
-            class="max-h-[490px] xl:max-h-[630px] object-contain"
+            class="max-h-[490px] xl:max-h-[630px] w-auto object-contain md:scale-x-[-1]"
           />
           <!-- ? kontennya -->
           <div class="flex flex-col gap-[20px] lg:gap-[30px] xl:py-[73.5px]">
@@ -310,7 +331,7 @@
                   <img
                     src="images/english-fit/Group 3126267.png"
                     alt=""
-                    class="h-[24px] object-contain"
+                    class="h-[24px] w-auto my-auto object-contain"
                   />
                   <p
                     class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]"
@@ -323,7 +344,7 @@
                   <img
                     src="images/english-fit/Group 3126267.png"
                     alt=""
-                    class="h-[24px] object-contain"
+                    class="h-[24px] w-auto my-auto object-contain"
                   />
                   <p
                     class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]"
@@ -336,7 +357,7 @@
                   <img
                     src="images/english-fit/Group 3126267.png"
                     alt=""
-                    class="h-[24px] object-contain"
+                    class="h-[24px] w-auto my-auto object-contain"
                   />
                   <p
                     class="text-[16px] font-normal leading-[22px] tracking-[-0.011em]"
@@ -376,17 +397,18 @@
             <h1 class="font-bold text-[32px] lg:text-[40px]">
               Upgrade Skill Mudah, Dapat Kerja Cepat!
             </h1>
-            <div class="flex flex-col lg:gap-[16px]">
+            <div class="flex flex-col gap-[20px] lg:gap-[16px]">
               <p class="text-[16px] lg:text-[20px]">
                 Learn English with an interactive method that can be directly
                 applied in daily practice, so it can be understood and mastered
                 more quickly.
               </p>
+              <!-- ! bulle points -->
               <ul class="flex flex-col gap-[10px]">
                 <li class="flex flex-row gap-[10px]">
                   <img
                     src="images/english-fit/Group 3126267.png"
-                    class="h-[24px] w-[24px] object-contain"
+                    class="h-[24px] w-auto object-contain my-auto"
                   />
                   <p class="text-[16px] lg:text-[20px]">
                     Interactive Environment – ​​Learn with tutors and active
@@ -396,7 +418,7 @@
                 <li class="flex flex-row gap-[10px]">
                   <img
                     src="images/english-fit/Group 3126267.png"
-                    class="h-[24px] w-[24px] object-contain"
+                    class="h-[24px] w-auto object-contain my-auto"
                   />
                   <p class="text-[16px] lg:text-[20px]">
                     Professional Mentoring – Mentored by experienced teachers.
@@ -405,7 +427,7 @@
                 <li class="flex flex-row gap-[10px]">
                   <img
                     src="images/english-fit/Group 3126267.png"
-                    class="h-[24px] w-[24px] object-contain"
+                    class="h-[24px] w-auto object-contain my-auto"
                   />
                   <p class="text-[16px] lg:text-[20px]">
                     Faster Results – Improve your ability to speak naturally and
@@ -816,7 +838,7 @@
         >
           <!-- !teksnya -->
           <div class="flex flex-col gap-[30px]">
-            <h1 class="text-[32px] lg:text[40px] text-center">
+            <h1 class="text-[32px] lg:text[40px] text-center font-bold">
               Upgrade Skill Mudah, Dapat Kerja Cepat!
             </h1>
             <p class="text-[16px] lg:text[20px] text-center">
@@ -939,7 +961,7 @@
           class="flex flex-col gap-[30px] lg:gap-[50px] mx-auto lg:max-w-[1200px]"
         >
           <div class="flex flex-col gap-[30px]">
-            <h1 class="text-[32px] lg:text-[40px] text-center">
+            <h1 class="text-[32px] lg:text-[40px] text-center font-bold">
               Photos & Video Gallery
             </h1>
             <p
