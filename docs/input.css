@@ -98,11 +98,11 @@ p {
 
   /* ! konten upgrade 2 */
   .upgrade2li {
-    @apply bg-white flex flex-col gap-[20px] min-w-[285px] max-w-[360px];
+    @apply bg-white flex flex-col gap-[20px] min-w-[285px] max-w-[360px] mx-auto rounded-md;
   }
 
   .upgrade2img {
-    @apply h-[150px] ;
+    @apply h-[150px] rounded-md;
   }
 
   .upgrade2divtengah {

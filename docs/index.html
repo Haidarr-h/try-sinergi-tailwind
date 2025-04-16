@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sinergi Life Homepage</title>
+    <title>Sinergi.life</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
 
   <body class="font-instru p-0 m-0 w-full overflow-x-hidden">
     <!-- ! background header (background video upscale) -->
-    <header class="relative w-full lg:max-h-[1080px]">
-      <video
+    <header
+      class="relative w-full lg:max-h-[1080px] bg-[url('./images/jason.png')] bg-cover bg-center"
+    >
+      <!-- <video
         autoplay
         muted
         loop
@@ -22,11 +24,11 @@
           type="video/mp4"
         />
         Your browser does not support the video tag.
-      </video>
+      </video> -->
 
       <!-- ! Container kontennya (navbar & header teks) -->
       <div
-        class="z-10 relative w-full lg:max-w-[1200px] pt-[20px] lg:pt-[15px] mx-auto flex flex-col px-[4%] xl:px-0"
+        class="z-10 relative w-full lg:max-w-[1200px] pt-[20px] lg:pt-5 mx-auto flex flex-col px-[4%] xl:px-0"
       >
         <!-- ! navbar (logo, menu, languages)-->
         <nav class="flex justify-between">
@@ -35,9 +37,10 @@
             <img
               src="images/image 1.png"
               alt="logo"
-              class="w-[33px] md:w-[50px]"
+              class="w-[33px] md:w-auto"
             />
-            <span class="font-bold text-white text-[16px] leading-[100%]"
+            <span
+              class="font-bold text-white text-[16px] lg:text-xl leading-[100%]"
               >Sinergi Life</span
             >
           </div>
@@ -51,7 +54,7 @@
               id="navbar-links"
             >
               <li>
-                <a href="#" class="font-bold group navbar-a"
+                <a href="#" class="font-bold group navbar-a opacity-100"
                   >Home
                   <span class="group-hover:w-full sm:w-full navbar-span"></span
                 ></a>
@@ -158,14 +161,14 @@
       <!-- ! section 1: key features -->
       <!-- ! container content -->
       <div
-        class="relative z-20 lg:max-w-[1200px] lg:mx-auto px-[4%] xl:px-0 mt-[50px] lg:-mt-[140px]"
+        class="relative z-20 lg:max-w-[1200px] lg:mx-auto px-[4%] xl:px-0 mt-[50px] lg:-mt-[200px]"
       >
         <ul class="flex flex-col lg:flex-row gap-[16px] lg:gap-[21px]">
           <li class="keyfeaturesmob lg:keyfeatures">
             <img
               src="images/key-features/100+ Experienced Mentor.png"
               alt="100+ Experienced Mentor"
-              class="h-[60px] w-auto"
+              class="h-[80px] w-auto"
             />
             <h3
               class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
@@ -181,7 +184,7 @@
             <img
               src="images/key-features/Group 7812.png"
               alt="Flexible Learning"
-              class="h-[60px] w-auto"
+              class="h-[80px] w-auto"
             />
             <h3
               class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
@@ -197,7 +200,7 @@
             <img
               src="images/key-features/Real-World Project-Based Learning.png"
               alt="Real-World Project-Based Learning"
-              class="h-[60px] w-auto"
+              class="h-[80px] w-auto"
             />
             <h3
               class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
@@ -213,7 +216,7 @@
             <img
               src="images/key-features/money.png"
               alt="100% Money-Back Guarantee"
-              class="h-[60px] w-auto"
+              class="h-[80px] w-auto"
             />
             <h3
               class="text-[20px] leading-[25.5px] tracking-[-1.7%] font-bold mt-[20px]"
@@ -847,10 +850,11 @@
               langsung, dan kesempatan kerja setelah lulus!
             </p>
           </div>
+
           <!-- ! containernya -->
           <div>
             <ul
-              class="flex flex-row justify-between gap-[20px] overflow-y-auto"
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[20px] mx-auto"
             >
               <!-- ! ini perkotak kontennya -->
               <!-- ? KONTEN 1 -->
@@ -937,6 +941,82 @@
                   <p class="upgrade2p">
                     Developing effective, engaging, and high-quality educational
                     materials for learners and
+                  </p>
+                  <ul>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">1 Year Working Experience</li>
+                  </ul>
+                </div>
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class="button"
+                /></a>
+              </li>
+            </ul>
+
+            <ul
+              class="mt-[20px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[20px] mx-auto"
+            >
+              <li class="upgrade2li w-full h-full rounded-xl">
+                <!-- !gambar -->
+                <img src="images/Card Thumbnail-Full Stack Programmer.png" alt="" class="upgrade2img" />
+                <!-- ! konten tengah -->
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Offline English Teacher</h3>
+                  <p class="upgrade2p">
+                    Teaching English Offline for students with various different
+                    age groups and learning purposes.
+                  </p>
+                  <ul>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">
+                      Less Than 1 Year Experience
+                    </li>
+                  </ul>
+                </div>
+                <!-- ! button -->
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class=""
+                /></a>
+              </li>
+
+              <!-- ? KONTEN 2 -->
+              <li class="upgrade2li">
+                <img src="images/Card Thumbnail-Quality Assurance.png" alt="" class="upgrade2img" />
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Graphic Designer</h3>
+                  <p class="upgrade2p">
+                    Designs graphics for social media contents and marketing
+                    needs such as poster and sales banner.
+                  </p>
+                  <ul>
+                    <li class="upgrade-inside-li">Work from Office</li>
+                    <li class="upgrade-inside-li">1 Year Experience</li>
+                  </ul>
+                </div>
+                <a href="#" class="upgrade-img"
+                  ><img src="images/Button.png" alt="" class="button"
+                /></a>
+              </li>
+              <!-- ? KONTEN 3 -->
+              <li class="upgrade2li">
+                <img src="images/Card Thumbnail-Senior Business Development.png" alt="" class="upgrade2img" />
+                <div class="upgrade2divtengah">
+                  <img
+                    src="images/Job Type Container.png"
+                    class="upgrade2divtengahimg"
+                  />
+                  <h3 class="upgrade2h3">Admin Sales</h3>
+                  <p class="upgrade2p">
+                    Helping companies improve sales efficiency, provide
+                    satisfactory customer and elevate sales
                   </p>
                   <ul>
                     <li class="upgrade-inside-li">Work from Office</li>
